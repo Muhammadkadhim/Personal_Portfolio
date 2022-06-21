@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 *,
 *::before,
 *::after {
@@ -18,4 +20,4 @@ ul {
 
 a {
   text-decoration: none;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
