@@ -1,5 +1,6 @@
 @import "../fonts/fonts";
 @import "../colors/colors";
+@import "../variables/variables";
 
 *,
 *::before,
@@ -12,7 +13,7 @@
 body {
   font-family: "Inter", sans-serif;
   font-size: 12px;
-  background-color: $primary;
+  background-color: white;
 }
 
 ul {
@@ -20,4 +21,30 @@ ul {
 }
 a {
   text-decoration: none;
+  color: white;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: $nav-height;
+  background-color: $bg-color-primary;
+
+  .container {
+    height: 100%;
+  }
+}
+
+main {
+  height: calc(100vh - $nav-height);
+  margin-top: $nav-height;
 }
