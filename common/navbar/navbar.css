@@ -11,7 +11,7 @@ nav {
   }
 }
 
-nav h1 {
+nav h1 a {
   color: white;
   font-family: "Lily Script One";
   font-size: 1.3rem;
@@ -43,7 +43,7 @@ nav .nav-items {
     top: 50px;
     right: -100%;
     width: 100%;
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
     background-color: #19212f;
     flex-direction: column-reverse;
     justify-content: space-evenly;
@@ -72,6 +72,7 @@ nav .nav-items .nav-icons {
   }
 }
 nav .nav-items .nav-icons .iconify {
+  font-size: 0.8rem;
   margin-right: 1em;
   cursor: pointer;
   transition: transform 300ms ease-out;
@@ -93,7 +94,6 @@ nav .nav-items .nav-links {
 }
 nav .nav-items .nav-links li {
   margin-right: 1.5em;
-  border-radius: 5px;
   position: relative;
 }
 @media screen and (max-width: 768px) {
@@ -130,6 +130,7 @@ nav .nav-items .nav-links li:hover::after {
 nav .nav-items .nav-links li a {
   display: block;
   padding: 0.8em;
+  border-radius: 5px;
 }
 nav .nav-items .nav-links li:last-child a {
   margin-right: 0;

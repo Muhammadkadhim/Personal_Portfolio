@@ -8,6 +8,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 12px;
@@ -43,6 +47,21 @@ header .container {
 }
 
 main {
-  height: calc(100vh - 50px);
   margin-top: 50px;
+  height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #19212f;
+  /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 20px;
+  border: none;
 }/*# sourceMappingURL=main.css.map */
