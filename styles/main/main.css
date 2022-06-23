@@ -39,7 +39,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 50px;
+  height: 60px;
   background-color: #19212f;
 }
 header .container {
@@ -47,8 +47,9 @@ header .container {
 }
 
 main {
-  margin-top: 50px;
-  height: 100vh;
+  margin-top: 60px;
+  min-height: calc(100vh - 60px);
+  background-color: #19212f;
 }
 
 body::-webkit-scrollbar {
@@ -57,7 +58,6 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-track {
   background: #19212f;
-  /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {

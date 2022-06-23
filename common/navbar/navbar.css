@@ -36,14 +36,15 @@ nav .nav-items {
   display: flex;
   align-items: center;
   flex-grow: 1;
+  z-index: 1000;
 }
 @media screen and (max-width: 768px) {
   nav .nav-items {
     position: absolute;
-    top: 50px;
+    top: 60px;
     right: -100%;
     width: 100%;
-    min-height: calc(100vh - 50px);
+    min-height: calc(100vh - 60px);
     background-color: #19212f;
     flex-direction: column-reverse;
     justify-content: space-evenly;
@@ -131,6 +132,9 @@ nav .nav-items .nav-links li a {
   display: block;
   padding: 0.8em;
   border-radius: 5px;
+}
+nav .nav-items .nav-links li:last-child {
+  margin-right: 0;
 }
 nav .nav-items .nav-links li:last-child a {
   margin-right: 0;
