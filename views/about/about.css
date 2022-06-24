@@ -1,1 +1,136 @@
-/*# sourceMappingURL=about.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.about {
+  height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 900px) {
+  .about {
+    padding-top: 5em;
+    flex-direction: column;
+  }
+}
+
+.about .col {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 900px) {
+  .about .col {
+    width: 100%;
+  }
+}
+
+.about .col-1 {
+  justify-content: flex-start;
+  color: #fff;
+}
+@media screen and (max-width: 900px) {
+  .about .col-1 {
+    justify-content: center;
+  }
+}
+.about .col-1 .content span {
+  display: block;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1rem;
+  margin-bottom: 0.5em;
+}
+.about .col-1 .content .name {
+  width: 250px;
+  height: 110px;
+  border-radius: 20px;
+  background-color: #293241;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.about .col-1 .content .name .iconify {
+  margin-right: 1em;
+  font-size: 1.5rem;
+}
+.about .col-1 .content .carrier {
+  width: 250px;
+  height: 110px;
+  border-radius: 20px;
+  background-color: #293241;
+  margin-left: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2em 1em;
+}
+.about .col-1 .content .carrier h2:nth-child(2) {
+  margin-top: 1.5em;
+  margin-left: 5.2em;
+}
+.about .col-1 .content .name,
+.about .col-1 .content .carrier {
+  transition: transform 300ms ease-out;
+}
+.about .col-1 .content .name:hover,
+.about .col-1 .content .carrier:hover {
+  transform: scale(1.05);
+}
+
+.about .col-2 {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2em;
+}
+@media screen and (max-width: 900px) {
+  .about .col-2 {
+    align-items: center;
+    padding-top: 3em;
+  }
+}
+
+.about .col-2 p {
+  font-size: 1rem;
+  line-height: 25px;
+  color: rgb(198, 198, 198);
+}
+@media screen and (max-width: 900px) {
+  .about .col-2 p {
+    text-align: center;
+  }
+}
+.about .col-2 button {
+  all: unset;
+  border: 1px solid #293241;
+  color: rgb(198, 198, 198);
+  border-radius: 10px;
+  padding: 1em 2em;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 300ms ease-out;
+}
+.about .col-2 button:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.about .col-2 .skills {
+  display: flex;
+  gap: 2em;
+}
+.about .col-2 .skills ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  margin-left: 1em;
+}
+.about .col-2 .skills ul li {
+  margin-bottom: 0.8em;
+  color: #607495;
+}
+.about .col-2 .skills ul li:first-child {
+  color: rgb(198, 198, 198);
+  margin-bottom: 1em;
+  list-style: disc;
+  font-weight: bold;
+}/*# sourceMappingURL=about.css.map */

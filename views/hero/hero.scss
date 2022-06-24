@@ -27,7 +27,6 @@
 
 .hero .col-1 {
   justify-content: flex-start;
-  background-color: $bg-color-primary;
   color: #fff;
   background-image: url("./images/hero-img-1-lg.svg");
   background-position: bottom;
@@ -120,12 +119,4 @@
       }
     }
   }
-}
-
-.hero .col-2 {
-  //   background-color: #293241;
-
-  //   @media screen and (max-width: 768px) {
-  //     display: none;
-  //   }
 }
