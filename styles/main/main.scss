@@ -42,6 +42,7 @@ header {
   width: 100%;
   height: $nav-height;
   background-color: $bg-color-primary;
+  z-index: 1000;
 
   .container {
     height: 100%;
