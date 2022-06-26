@@ -25,12 +25,12 @@ window.onload = function () {
       techs: "React.js",
     },
 
-    //     {
-    //       id: id(),
-    //       name: "YouTube Clone",
-    //       description: "A simple youtube clone app",
-    //       techs: "React.js, Axios",
-    //     },
+    {
+      id: id(),
+      name: "YouTube Clone",
+      description: "A simple youtube clone app",
+      techs: "React.js, Axios",
+    },
   ];
 
   // generating random ID
