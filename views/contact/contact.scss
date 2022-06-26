@@ -1,0 +1,10 @@
+@import "../../styles/fonts/fonts";
+@import "../../styles/colors/colors";
+@import "../../styles/variables/variables";
+
+.contact {
+  height: calc(100vh - $nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
