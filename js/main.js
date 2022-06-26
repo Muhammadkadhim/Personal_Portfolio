@@ -9,27 +9,24 @@ document.getElementById("menu-btn").addEventListener("click", () => {
 let works = [
   {
     id: id(),
-    name: "React Navbar",
-    description: "a nice responsive navbar",
-    techs: "React.js",
-  },
-  {
-    id: id(),
     name: "Kalkulator",
     description: "A simple javascript calculator",
     techs: "HTML, CSS, Javascript",
+    link: "https://web-kalkulator.netlify.app",
   },
   {
     id: id(),
     name: "Unsplash Image Resizer",
     description: "Resizing unsplash images using javascript",
     techs: "HTML, bootstrap, Javascript",
+    link: "https://unsplash-image-resizer.netlify.app",
   },
   {
     id: id(),
     name: "DoList",
     description: "A nice todo list app",
     techs: "React.js",
+    link: "https://keeeper-app.netlify.app",
   },
 
   {
@@ -37,6 +34,21 @@ let works = [
     name: "YouTube Clone",
     description: "A simple youtube clone app",
     techs: "React.js, Axios",
+    link: "https://youtube-clone-navy-eight.vercel.app/",
+  },
+  {
+    id: id(),
+    name: "Portfolio Landing Page",
+    description: "a nice landing page for portfolio",
+    techs: "React.js",
+    link: "https://portfolio-landing-page-web.vercel.app/",
+  },
+  {
+    id: id(),
+    name: "Responsive Navbar",
+    description: "a nice responsive navigation bar",
+    techs: "Vite.js",
+    link: "https://vite-responsive-navbar.vercel.app/",
   },
 ];
 
@@ -50,7 +62,8 @@ let worksContainer = document.getElementById("work-container");
 works.forEach((work) => {
   let ancherTag = document.createElement("a");
   ancherTag.setAttribute("id", "work");
-  ancherTag.setAttribute("href", "#works");
+  ancherTag.setAttribute("href", `${work.link}`);
+  ancherTag.setAttribute("target", `_blank`);
 
   let workDiv = document.createElement("div");
   workDiv.classList.add("work");
