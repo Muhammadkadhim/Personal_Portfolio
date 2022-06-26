@@ -1,36 +1,86 @@
-// including html files in index.html
-// $(function () {
-//   var includes = $("[data-include]");
-//   $.each(includes, function () {
-//     var file = $(this).data("include");
-//     $(this).load(file);
-//   });
-// });
+// navbar menu
+document.getElementById("menu-btn").addEventListener("click", () => {
+  document.getElementById("menu").classList.toggle("toggled");
+});
 
-// let includes = document.querySelectorAll('[data-include]')
-// includes.forEach(includes, ()=>{
-//   let file =
-// })
+// end of navbar menu
 
-class HTMLInclude extends HTMLElement {
-  constructor() {
-    super();
-    this.innerHTML = "Loading...";
-    this.loadContent();
-  }
+// loading works into the DOM
+let works = [
+  {
+    id: id(),
+    name: "React Navbar",
+    description: "a nice responsive navbar",
+    techs: "React.js",
+  },
+  {
+    id: id(),
+    name: "Kalkulator",
+    description: "A simple javascript calculator",
+    techs: "HTML, CSS, Javascript",
+  },
+  {
+    id: id(),
+    name: "Unsplash Image Resizer",
+    description: "Resizing unsplash images using javascript",
+    techs: "HTML, bootstrap, Javascript",
+  },
+  {
+    id: id(),
+    name: "DoList",
+    description: "A nice todo list app",
+    techs: "React.js",
+  },
 
-  async loadContent() {
-    const source = this.getAttribute("src");
-    if (!source) {
-      throw new Error("No src attribute given.");
-    }
-    const response = await fetch(source);
-    if (response.status !== 200) {
-      throw new Error(`Could not load resource: ${source}`);
-    }
-    const content = await response.text();
-    this.innerHTML = content;
-  }
+  {
+    id: id(),
+    name: "YouTube Clone",
+    description: "A simple youtube clone app",
+    techs: "React.js, Axios",
+  },
+];
+
+// generating random ID
+function id() {
+  return Math.random().toString(36).slice(2);
 }
 
-window.customElements.define("html-include", HTMLInclude);
+// adding works to the DOM
+let worksContainer = document.getElementById("work-container");
+works.forEach((work) => {
+  let ancherTag = document.createElement("a");
+  ancherTag.setAttribute("id", "work");
+  ancherTag.setAttribute("href", "#works");
+
+  let workDiv = document.createElement("div");
+  workDiv.classList.add("work");
+  ancherTag.appendChild(workDiv);
+
+  let iconDiv = document.createElement("div");
+  iconDiv.classList.add("icons");
+  workDiv.appendChild(iconDiv);
+
+  let folderIcon = document.createElement("span");
+  folderIcon.classList.add("iconify");
+  folderIcon.setAttribute("data-icon", "akar-icons:folder");
+  iconDiv.appendChild(folderIcon);
+
+  let heading3 = document.createElement("h3");
+  heading3.classList.add("name");
+  heading3.appendChild(document.createTextNode(`${work.name}`));
+  workDiv.appendChild(heading3);
+
+  let description = document.createElement("div");
+  description.classList.add("description");
+  description.appendChild(document.createTextNode(`${work.description}`));
+  workDiv.appendChild(description);
+
+  let techsDiv = document.createElement("div");
+  techsDiv.classList.add("used-techs");
+  techsDiv.appendChild(document.createTextNode(`${work.techs}`));
+  workDiv.appendChild(techsDiv);
+
+  worksContainer.appendChild(ancherTag);
+});
+
+// end of loading the works into the dom
