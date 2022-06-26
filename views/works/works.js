@@ -41,13 +41,13 @@ window.onload = function () {
   // adding works to the DOM
   let worksContainer = document.getElementById("work-container");
   works.forEach((work) => {
-    let anacher = document.createElement("a");
-    anacher.setAttribute("id", "work");
-    anacher.setAttribute("href", "#works");
+    let ancherTag = document.createElement("a");
+    ancherTag.setAttribute("id", "work");
+    ancherTag.setAttribute("href", "#works");
 
     let workDiv = document.createElement("div");
     workDiv.classList.add("work");
-    anacher.appendChild(workDiv);
+    ancherTag.appendChild(workDiv);
 
     let iconDiv = document.createElement("div");
     iconDiv.classList.add("icons");
@@ -73,6 +73,6 @@ window.onload = function () {
     techsDiv.appendChild(document.createTextNode(`${work.techs}`));
     workDiv.appendChild(techsDiv);
 
-    worksContainer.appendChild(anacher);
+    worksContainer.appendChild(ancherTag);
   });
 };
