@@ -652,6 +652,13 @@ nav .nav-items .nav-links li:last-child:hover a {
   color: white;
   padding: 1em;
 }
+@media screen and (max-width: 768px) {
+  .contact .col-2 input,
+.contact .col-2 textarea,
+.contact .col-2 button {
+    width: 350px;
+  }
+}
 .contact .col-2 input::-moz-placeholder, .contact .col-2 textarea::-moz-placeholder, .contact .col-2 button::-moz-placeholder {
   color: white;
 }

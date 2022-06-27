@@ -688,6 +688,10 @@ nav {
         color: white;
         padding: 1em;
 
+        @media screen and (max-width: 768px) {
+            width: 350px;
+        }
+
         &::placeholder {
             color: white;
         }
