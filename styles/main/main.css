@@ -339,32 +339,34 @@ nav .nav-items .nav-links li:last-child:hover a {
 }
 
 .about {
-  height: calc(100vh - 60px);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 5em;
 }
 @media screen and (max-width: 900px) {
   .about {
-    padding-top: 5em;
     flex-direction: column;
   }
 }
 
 .about .cols {
   display: flex;
-  margin-top: 5em;
-  margin-bottom: 10em;
+  align-items: center;
 }
 @media screen and (max-width: 900px) {
   .about .cols {
     flex-direction: column;
+    margin-top: 5em;
   }
 }
 
 .about .col {
-  width: 50%;
+  width: 40%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -435,14 +437,18 @@ nav .nav-items .nav-links li:last-child:hover a {
 }
 
 .about .col-2 {
+  width: 60%;
   flex-direction: column;
   align-items: flex-start;
   gap: 2em;
+  padding: 5em;
 }
 @media screen and (max-width: 900px) {
   .about .col-2 {
     align-items: center;
-    padding-top: 2em;
+    width: 100%;
+    padding: 0;
+    padding-top: 5em;
   }
 }
 
@@ -450,6 +456,7 @@ nav .nav-items .nav-links li:last-child:hover a {
   font-size: 1rem;
   line-height: 25px;
   color: rgb(198, 198, 198);
+  width: 100%;
 }
 @media screen and (max-width: 900px) {
   .about .col-2 p {
@@ -514,32 +521,14 @@ nav .nav-items .nav-links li:last-child:hover a {
 }
 
 .works {
-  min-height: calc(100vh - 60px);
   height: -webkit-fit-content;
   height: -moz-fit-content;
+  height: fit-content;
   height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-block: 2em;
-}
-
-.works .more {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.works .more p {
-  font-size: 1rem;
-  padding: 0.6em 2em;
-  background-color: #293241;
-  border-radius: 10px;
-  transition: padding 300ms ease-out;
-  cursor: pointer;
-}
-.works .more p:hover {
-  padding-inline: 2.2em;
 }
 
 .works .work-container {
@@ -548,7 +537,7 @@ nav .nav-items .nav-links li:last-child:hover a {
   align-items: center;
   justify-content: center;
   gap: 2em;
-  margin-block: 5em;
+  padding: 5em 0;
 }
 
 .works .work-container .work {
@@ -585,7 +574,9 @@ nav .nav-items .nav-links li:last-child:hover a {
 }
 
 .contact {
-  min-height: calc(100vh - 60px);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -597,11 +588,6 @@ nav .nav-items .nav-links li:last-child:hover a {
   .contact {
     padding: 6em 0;
     gap: 5em;
-  }
-}
-@media screen and (max-width: 768px) {
-  .contact {
-    gap: 0;
   }
 }
 
