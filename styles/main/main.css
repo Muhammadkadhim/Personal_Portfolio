@@ -347,7 +347,12 @@ nav .nav-items .nav-links li:last-child:hover a {
 
 .about .cols {
   display: flex;
-  margin-top: 10em;
+  margin-block: 10em;
+}
+@media screen and (max-width: 900px) {
+  .about .cols {
+    flex-direction: column;
+  }
 }
 
 .about .col {
