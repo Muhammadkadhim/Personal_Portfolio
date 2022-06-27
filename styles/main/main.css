@@ -127,9 +127,16 @@ nav .nav-items {
   }
 }
 nav .nav-items .nav-icons {
+  display: flex;
   flex-grow: 1;
   color: white;
   margin-left: 3em;
+}
+nav .nav-items .nav-icons li {
+  margin-right: 1em;
+}
+nav .nav-items .nav-icons li:last-child {
+  margin-right: 0;
 }
 @media screen and (max-width: 900px) {
   nav .nav-items .nav-icons {
@@ -554,6 +561,7 @@ nav .nav-items .nav-links li:last-child:hover a {
   padding: 2em;
   gap: 2em;
   transition: transform 300ms ease-out;
+  position: relative;
 }
 .works .work-container .work:hover {
   transform: scale(1.05);
@@ -565,11 +573,13 @@ nav .nav-items .nav-links li:last-child:hover a {
   font-size: 1.2rem;
 }
 .works .work-container .work .description {
-  font-size: 1rem;
+  font-size: 0.8rem;
   opacity: 0.8;
 }
 .works .work-container .work .used-techs {
-  margin-top: 5em;
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
   font-weight: bold;
   opacity: 0.8;
 }
