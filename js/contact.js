@@ -11,11 +11,28 @@ window.onload = function () {
             // these IDs from the previous steps
             emailjs.sendForm(`${SERVICE}`, `${TEMPLATE}`, this).then(
                 function () {
-                    alert("Your message was sent successfully!");
+                    var mobile =
+                        /iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(
+                            navigator.userAgent.toLowerCase()
+                        );
+                    if (mobile) {
+                        alert("Your message was sent successfully!");
+                    } else {
+                        alert("Your message was sent successfully!");
+                    }
                 },
                 function (error) {
                     console.log("FAILED...", error);
-                    alert("Sorry! an error has occured");
+
+                    var mobile =
+                        /iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(
+                            navigator.userAgent.toLowerCase()
+                        );
+                    if (mobile) {
+                        alert("Sorry! an error has occured");
+                    } else {
+                        alert("Sorry! an error has occured");
+                    }
                 }
             );
 
