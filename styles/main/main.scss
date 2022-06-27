@@ -669,7 +669,9 @@ nav {
         }
 
         input:focus ~ label,
-        textarea:focus ~ label {
+        textarea:focus ~ label,
+        input:valid ~ label,
+        textarea:valid ~ label {
             top: -15px;
             left: 0;
             opacity: 1;

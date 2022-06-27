@@ -635,7 +635,9 @@ nav .nav-items .nav-links li:last-child:hover a {
   transition: all 200ms ease-in-out;
 }
 .contact .col-2 div input:focus ~ label,
-.contact .col-2 div textarea:focus ~ label {
+.contact .col-2 div textarea:focus ~ label,
+.contact .col-2 div input:valid ~ label,
+.contact .col-2 div textarea:valid ~ label {
   top: -15px;
   left: 0;
   opacity: 1;
