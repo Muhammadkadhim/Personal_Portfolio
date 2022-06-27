@@ -363,7 +363,8 @@ nav {
 
 .about .cols {
   display: flex;
-  margin-block: 10em;
+  margin-top: 5em;
+  margin-bottom: 10em;
 
   @media screen and (max-width: 900px) {
     flex-direction: column;
