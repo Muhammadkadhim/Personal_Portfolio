@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 12px;
   color: aliceblue;
 }
@@ -399,8 +399,8 @@ nav .nav-items .nav-links li:last-child:hover a {
   font-size: 1.5rem;
 }
 .about .col-1 .content .carrier {
-  width: 250px;
-  height: 110px;
+  width: 300px;
+  height: 120px;
   border-radius: 20px;
   background-color: #293241;
   margin-left: 5em;
@@ -408,10 +408,15 @@ nav .nav-items .nav-links li:last-child:hover a {
   flex-direction: column;
   justify-content: flex-start;
   padding: 2em 1em;
+  color: rgb(226, 226, 226);
+}
+.about .col-1 .content .carrier h2 {
+  font-size: 1.1rem;
 }
 .about .col-1 .content .carrier h2:nth-child(2) {
+  display: block;
   margin-top: 1.5em;
-  margin-left: 5.2em;
+  align-self: flex-end;
 }
 .about .col-1 .content .name,
 .about .col-1 .content .carrier {
@@ -469,7 +474,7 @@ nav .nav-items .nav-links li:last-child:hover a {
 }
 .about .col-2 .skills ul li {
   margin-bottom: 0.8em;
-  color: #607495;
+  color: #d2d8e0;
 }
 .about .col-2 .skills ul li:first-child {
   color: rgb(198, 198, 198);
@@ -484,7 +489,7 @@ nav .nav-items .nav-links li:last-child:hover a {
   justify-content: flex-start;
 }
 .section-header h1 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -574,7 +579,8 @@ nav .nav-items .nav-links li:last-child:hover a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10em;
+  -moz-column-gap: 5em;
+       column-gap: 5em;
   flex-wrap: wrap;
 }
 @media screen and (max-width: 900px) {
@@ -592,16 +598,18 @@ nav .nav-items .nav-links li:last-child:hover a {
 .contact .col-1 {
   margin-top: -1em;
 }
-.contact .col-1 h1 {
-  margin-bottom: 0.6em;
+@media screen and (max-width: 768px) {
+  .contact .col-1 {
+    text-align: center;
+  }
 }
-.contact .col-1 p {
-  opacity: 0.9;
-  margin-bottom: 5em;
+.contact .col-1 h1 {
+  opacity: 0.8;
+  display: none;
 }
 @media screen and (max-width: 768px) {
-  .contact .col-1 p {
-    margin-bottom: 1em;
+  .contact .col-1 h1 {
+    display: block;
   }
 }
 .contact .col-1 img {
@@ -695,4 +703,76 @@ nav .nav-items .nav-links li:last-child:hover a {
 }
 .contact .col-2 button:hover {
   box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.1);
+}
+
+.footer {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+  margin-top: 4em;
+  padding: 2em 0;
+}
+.footer .row {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+@media screen and (max-width: 768px) {
+  .footer .row {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+}
+.footer .row .links {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .row .links li {
+  margin: 1em;
+  transition: transform 200ms ease-out;
+}
+.footer .row .links li:hover {
+  transform: scale(1.2);
+}
+.footer .row .links li:last-child {
+  margin-right: 0;
+}
+.footer .row .icons {
+  display: flex;
+}
+.footer .row .icons li {
+  transition: transform 200ms ease-out;
+}
+.footer .row .icons li:hover {
+  transform: translateY(-10px);
+}
+.footer .row .icons li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.footer .row .icons li a .iconify {
+  margin: 1em;
+  font-size: 1.5rem;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .footer .row .icons li a .iconify {
+    margin: 0.5em;
+  }
+}
+.footer .row p {
+  opacity: 0.8;
+}
+@media screen and (max-width: 768px) {
+  .footer .row p {
+    margin-bottom: 1em;
+  }
 }/*# sourceMappingURL=main.css.map */
