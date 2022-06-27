@@ -481,7 +481,7 @@ nav .nav-items .nav-links li:last-child:hover a {
 .section-header {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .section-header h1 {
   font-size: 1.2rem;
@@ -567,4 +567,123 @@ nav .nav-items .nav-links li:last-child:hover a {
   margin-top: 5em;
   font-weight: bold;
   opacity: 0.8;
+}
+
+.contact {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10em;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 900px) {
+  .contact {
+    padding: 6em 0;
+    gap: 5em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact {
+    gap: 0;
+  }
+}
+
+.contact .col-1 {
+  margin-top: -1em;
+}
+.contact .col-1 h1 {
+  margin-bottom: 0.6em;
+}
+.contact .col-1 p {
+  opacity: 0.9;
+  margin-bottom: 5em;
+}
+@media screen and (max-width: 768px) {
+  .contact .col-1 p {
+    margin-bottom: 1em;
+  }
+}
+.contact .col-1 img {
+  width: 400px;
+}
+@media screen and (max-width: 768px) {
+  .contact .col-1 img {
+    display: none;
+  }
+}
+
+.contact .col-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+  gap: 2.5em;
+}
+.contact .col-2 div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.contact .col-2 div label {
+  position: absolute;
+  top: 50%;
+  left: 1em;
+  transform: translateY(-50%);
+  pointer-events: none;
+  opacity: 0.9;
+  transition: all 200ms ease-in-out;
+}
+.contact .col-2 div input:focus ~ label,
+.contact .col-2 div textarea:focus ~ label {
+  top: -15px;
+  left: 0;
+  opacity: 1;
+  font-weight: bold;
+}
+.contact .col-2 input,
+.contact .col-2 textarea,
+.contact .col-2 button {
+  border: none;
+  border-radius: 5px;
+  width: 400px;
+  height: 50px;
+  background-color: #607495;
+  color: white;
+  padding: 1em;
+}
+.contact .col-2 input::-moz-placeholder, .contact .col-2 textarea::-moz-placeholder, .contact .col-2 button::-moz-placeholder {
+  color: white;
+}
+.contact .col-2 input:-ms-input-placeholder, .contact .col-2 textarea:-ms-input-placeholder, .contact .col-2 button:-ms-input-placeholder {
+  color: white;
+}
+.contact .col-2 input::placeholder,
+.contact .col-2 textarea::placeholder,
+.contact .col-2 button::placeholder {
+  color: white;
+}
+.contact .col-2 input:focus,
+.contact .col-2 textarea:focus,
+.contact .col-2 button:focus {
+  outline: none;
+}
+.contact .col-2 textarea {
+  height: 120px;
+  resize: none;
+}
+.contact .col-2 button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1em 2em;
+  color: white;
+  cursor: pointer;
+  transition: box-shadow 300ms ease-out;
+}
+.contact .col-2 button:hover {
+  box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.1);
 }/*# sourceMappingURL=main.css.map */
