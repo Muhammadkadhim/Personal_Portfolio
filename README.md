@@ -17,11 +17,10 @@ I'm **Muhammad Kadhim**, a web developer, i **design** nice looking websites and
 
 ## Font Reference
 
-| Font            | Example                                                                       |
-| --------------- | ----------------------------------------------------------------------------- |
-| Lily Script One |                                                                               |
-| --------------- | ----------------------------------------------------------------------------- |
-| Lily Script One |                                                                               |
+| Font            | Example |
+| --------------- | ------- |
+| Lily Script One |         |
+| Lily Script One |         |
 
 ## Features
 
