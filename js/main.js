@@ -5,9 +5,7 @@ document.getElementById("menu-btn").addEventListener("click", () => {
 
 let navlinks = document.querySelectorAll(".nav-links");
 
-navlinks.forEach((navlink) => {
-    console.log(navlink.tagName);
-});
+navlinks.forEach((navlink) => {});
 
 // end of navbar menu
 
@@ -106,7 +104,6 @@ works.forEach((work) => {
     worksContainer.appendChild(ancherTag);
 
     animeDelay = animeDelay * 1.5;
-    console.log(animeDelay);
 });
 
 // end of loading the works into the dom
