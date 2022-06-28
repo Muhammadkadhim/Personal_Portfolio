@@ -3,6 +3,12 @@ document.getElementById("menu-btn").addEventListener("click", () => {
     document.getElementById("menu").classList.toggle("toggled");
 });
 
+let navlinks = document.querySelectorAll(".nav-links");
+
+navlinks.forEach((navlink) => {
+    console.log(navlink.tagName);
+});
+
 // end of navbar menu
 
 // loading works into the DOM
