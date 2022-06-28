@@ -10,8 +10,8 @@ I'm **Muhammad Kadhim**, a web developer, i **design** nice looking websites and
 
 | Color          | Hex                                                              |
 | -------------- | ---------------------------------------------------------------- |
-| bg-color-one   | ![#131a26](https://via.placeholder.com/15/131a26/131a26.png) #131a26 |
-| bg-color-two   | ![#293241](https://via.placeholder.com/10/293241text=+) #293241  |
+| bg-color-one   | ![#131a26](https://via.placeholder.com/10/131a26?text=+) #131a26  |
+| bg-color-two   | ![#293241](https://via.placeholder.com/10/293241?text=+) #293241  |
 | bg-color-three | ![#607495](https://via.placeholder.com/10/607495?text=+) #607495 |
 | color          | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
 
