@@ -30,7 +30,7 @@ I'm **Muhammad Kadhim**, a web developer, i **design** nice looking websites and
 
 ## Demo
 
-view it on
+view it via
 [Netlify](https://muhammad-kadhim.netlify.app/)
 
 ## Used Techs
