@@ -17,17 +17,14 @@ I'm **Muhammad Kadhim**, a web developer, i **design** nice looking websites and
 
 ## Font Reference
 
-<<<<<<< HEAD
-| Font | Example |
-| --------------- | ---------------------------------------------------------------------------- |
-| Lily Script One | |
+| Font            | Example |
+| --------------- | ------- |
+| Lily Script One |         |
+
 =======
 | Font | Example |
 | --------------- | ----------------------------------------------------------------------------- |
 | Lily Script One | |
-
-> > > > > > > e8df131d7fc7981f582db52b5f73b0c32c8ef98e
-> > > > > > > | Poppins |
 
 ## Features
 
