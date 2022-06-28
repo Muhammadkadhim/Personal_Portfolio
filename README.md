@@ -19,7 +19,7 @@ I'm **Muhammad Kadhim**, a web developer, i **design** nice looking websites and
 
 | Font            | Example                                                                       |
 | --------------- | ----------------------------------------------------------------------------- |
-| Lily Script One | <span style="font-family: 'Lily Script One', cursive">Muhammad Kadhim</span>. |
+| Lily Script One |  |
 | Poppins         |
 
 ## Features
