@@ -1,11 +1,21 @@
 // navbar menu
-document.getElementById("menu-btn").addEventListener("click", () => {
-    document.getElementById("menu").classList.toggle("toggled");
+
+let menuBtn = document.getElementById("menu-btn");
+let menu = document.getElementById("menu");
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("toggled");
 });
 
 let navlinks = document.querySelectorAll(".nav-links");
 
-navlinks.forEach((navlink) => {});
+navlinks.forEach((navlink) => {
+    navlink.addEventListener("click", () => {
+        if (menu.classList.contains("toggled")) {
+            menu.classList.remove("toggled");
+        }
+    });
+});
 
 // end of navbar menu
 
